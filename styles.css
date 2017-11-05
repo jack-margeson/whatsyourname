@@ -46,6 +46,17 @@ html {
 	transform: translate(-50%, -50%);
 }
 
+.return {
+	font-size: 20px;
+	text-align: center;
+	
+	/*center*/
+	position: fixed;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 /*makes the entire form invisible and across the entire screen*/
 .textbox {
 	font-size: 30px;
