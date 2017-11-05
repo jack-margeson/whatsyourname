@@ -7,7 +7,7 @@ function stopRKey(evt) {
 	document.onkeypress = stopRKey; 
 
 // sets function for name and displays adjective
-function setname() {
+function setnamegood() {
 	var name
 	name = document.getElementById('userinput').value;
 
@@ -20,4 +20,17 @@ function setname() {
 	
 	document.getElementById('adjective').innerHTML = ('You are a very\xa0' +random+'\xa0person.')
 }
+
+function setnamebad() {
+	var name
+	name = document.getElementById('userinput').value;
+
+	document.getElementById("hide").style.display = "none";
 	
+	document.getElementById('name').innerHTML = ('Ugh. Its\xa0' +name+'.')
+	
+	var adjectives = ['aggressive','aloof','arrogant','belligerent','big-headed','boastful','bone-idle','boring','bossy','callous','cantankerous','careless','changeable','clinging','compulsive','conservative','cowardly','cruel','cunning','cynical','deceitful','detached','dishonest','dogmatic','domineering','finicky','flirtatious','foolish','foolhardy','fussy','greedy','grumpy','gullible','harsh','impatient','impolite','impulsive','inconsiderate','inconsistent','indecisive','indiscreet','inflexible','interfering','intolerant','irresponsible','jealous','lazy','Machiavellian','materialistic','mean','miserly','moody','narrow-minded','nasty','naughty','nervous','obsessive','obstinate','overcritical','overemotional','parsimonious','patronizing','perverse','pessimistic','pompous','possessive','pusillanimous','quarrelsome','quick-tempered','resentful','rude','ruthless','sarcastic','secretive','selfish','self-centred','self-indulgent','silly','sneaky','stingy','stubborn','stupid','superficial','tactless','timid','touchy','thoughtless','truculent','unkind','unpredictable','unreliable','untidy','untrustworthy','vague','vain','vengeful','vulgar','weak-willed']
+	var random = adjectives[Math.floor(Math.random() * adjectives.length)];
+	
+	document.getElementById('adjective').innerHTML = ('You are sooooo\xa0' +random+'.')
+}

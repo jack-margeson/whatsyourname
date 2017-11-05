@@ -53,15 +53,32 @@ html {
 .submit {
 	height: 30px; 
 	width: 300px; 
-	border: none; 
-	outline: none;
-	background-color: #FFC253;
+	background-color: #6dff82;
 	border-radius: 20px;
+	outline: none;
+	border: 3px solid #000000;
 	z-index: 2;
 
 	/*center*/
 	position: fixed;
 	top: 58%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.submit2 {
+	height: 30px; 
+	width: 300px; 
+	border: none; 
+	outline: none;
+	background-color: #ff6c53;
+	border-radius: 20px;
+	border: 3px solid #000000;
+	z-index: 2;
+
+	/*center*/
+	position: fixed;
+	top: 62.5%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
