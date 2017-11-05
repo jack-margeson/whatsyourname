@@ -4,13 +4,35 @@
 	<link rel="stylesheet" href="styles.css" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
 	
+	<!-- disables enter button on form -->
+	<script type="text/javascript"> 
+
+	function stopRKey(evt) { 
+	var evt = (evt) ? evt : ((event) ? event : null); 
+	var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null); 
+	if ((evt.keyCode == 13) && (node.type=="text"))  {return false;} 
+	} 
+	document.onkeypress = stopRKey; 
+</script>
+
 	<!-- title and textbox -->
 	<body>
 		<div class="title">
-			<p class="text center">What's your name?</p>
+			<p class="text center">... what's your name?</p>
 		</div>
-		<form action="name.php" method="get" class="textbox text">
-			 <input type="text" name="username" class="textbox text">
-		<form>
+		
+		<form id="form">	
+			<input id="userinput" name="name" type="text" class="textbox text" />
+			<input type="button" value="Analyze Name" id="submit" onclick="setname();" class="submit textitalic" />
+		</form>
+		
+		<script>	
+		function setname() {
+		var name
+		name = document.getElementById('userinput').value;
+		alert(name);
+		}
+		
+		</script>
 	</body>
 </html>
