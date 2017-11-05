@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+	<!-- linking (css, java, fonts, etc.)-->
+	<link rel="stylesheet" href="styles.css" />
+	<link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="name.js"></script>
+
+	<!-- title and user input form -->
+	<body>
+		<div id="hide">
+			<div class="title">
+				<p class="text center">... what's your name?</p>
+			</div>
+		
+			<form>	
+				<input id="userinput" name="name" type="text" class="textbox text" />
+				<input type="button" value="Analyze Name" onclick="setname();" class="submit textitalic" />
+			</form>
+		</div>
+		<div class="title">
+			<p id="name" class= "text"></p>
+		</div>
+	</body>
+</html>
