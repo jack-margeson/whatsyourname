@@ -14,6 +14,5 @@ function setname() {
 	document.getElementById("hide").style.display = "none";
 	
 	document.getElementById('name').innerHTML = ('Hello,\xa0' +name+'!')
-	
 }
 	// alert(name+'-setname')
