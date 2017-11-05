@@ -1,5 +1,5 @@
 <?php
-	$name = htmlspecialchars($_POST['name']);
+	$name = htmlspecialchars($_GET['name']);
 	
 	echo  $name;
 ?>
