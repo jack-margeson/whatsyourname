@@ -1,4 +1,4 @@
-//disables enter key
+// disables enter key
 function stopRKey(evt) { 
 	var evt = (evt) ? evt : ((event) ? event : null); 
 	var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null); 
@@ -6,7 +6,7 @@ function stopRKey(evt) {
 	} 
 	document.onkeypress = stopRKey; 
 
-// sets function for name and displays adjective
+// sets function for name and displays good adjective
 function setnamegood() {
 	var name
 	name = document.getElementById('userinput').value;
@@ -21,6 +21,7 @@ function setnamegood() {
 	document.getElementById('adjective').innerHTML = ('You are a very\xa0' +random+'\xa0person.')
 }
 
+// sets function for name and displays bad adjective
 function setnamebad() {
 	var name
 	name = document.getElementById('userinput').value;

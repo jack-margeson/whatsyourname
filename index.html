@@ -4,18 +4,21 @@
 	<link rel="stylesheet" href="styles.css" />
 	<link href="https://fonts.googleapis.com/css?family=Roboto:700" rel="stylesheet">
 	<script src="name.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<!-- title and user input form -->
 	<body>
 		<div id="hide">
 			<div class="title">
-				<p class="text center">... what's your name?</p>
+				<p class="textitalicbold center">... what's your name?</p>
 			</div>
 		
 			<form>	
 				<input id="userinput" name="name" type="text" class="textbox text" />
 				<input type="button" value="Compliment me!" onclick="setnamegood();" class="submit textitalic" />
 				<input type="button" value="Or... insult me?" onclick="setnamebad();" class="submit2 textitalic" />
+				<input type="button" value="About..." onClick="location.href='about/index.html';" class="submit3 textitalic" />
+				<input type="button" value="Destroy the universe!" class="fakebutton textitalicbold" />
 			</form>
 		</div>
 		<div class="title">
