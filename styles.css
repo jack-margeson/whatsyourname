@@ -3,17 +3,17 @@ html {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	background-color:#565B67;
+	background-color:#FDFB93;
 }
 
 .text {
 	font-family: 'Roboto';
-	color: white;
+	color: #000000;
 }
 
 .textitalic {
 	font-family: 'Roboto';
-	color: white;
+	color: #000000;
 	font-style: italic;
 }
 
@@ -55,7 +55,7 @@ html {
 	width: 300px; 
 	border: none; 
 	outline: none;
-	background-color: #4d515c;
+	background-color: #FFC253;
 	border-radius: 20px;
 	z-index: 2;
 
