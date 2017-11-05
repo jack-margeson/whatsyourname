@@ -1,0 +1,22 @@
+{
+  "name": "cincyhacks2017",
+  "version": "1.0.0",
+  "description": "apis for cincihacks2017 project",
+  "main": "name.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jack-margeson/whatsyourname.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jack-margeson/whatsyourname/issues"
+  },
+  "homepage": "https://github.com/jack-margeson/whatsyourname#readme",
+  "dependencies": {
+    "usbabynames": "^1.1.2"
+  }
+}
